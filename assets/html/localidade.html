@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4672e12108.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/localidade.css">
+    <script defer src="../js/localidade.js"></script>
+    <title>Pesquisa por Nome</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Pesquisa por Localidade:</h1>
+    </header>
+    <main class="container">
+        <h2>Digite um nome:</h2>
+        <form class="form">
+            <input type="text" class="search-name search" placeholder="Nome" required>
+            <input type="number" class="search-place search" placeholder="Código da localidade" required>
+            <input type="submit" value="Procurar" class="sub">
+            <div class="questionMark"><a target="_blank" href="https://www.ibge.gov.br/explica/codigos-dos-municipios.php"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/></svg></a></div>
+        </form>
+        <button onclick="location.href='../../index.html'" class="btn ">retornar</button>
+    </main>
+    <div class="error-msg">
+        <h1 >Dados inválidos ou não encontrados</h1>
+    </div>
+
+    <section class="fetch-container">
+        <h1 class="fetch-title"></h1>
+        <div class="fetch-list-container">
+            <ul class="fetch-parent">
+            </ul>
+        </div>
+        <button onclick="location.href='localidade.html'" class="btn">Nova pesquisa</button>
+        <button onclick="location.href='../../index.html'" class="btn ">retornar</button>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    margin: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+.container {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search{
+    width: 250px;
+    padding: 3%;
+    outline: none;
+    border-radius: 12px;
+    font-family: 'arial';
+}
+
+.container h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+
+.fetch-container{
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.fetch-title{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+.fetch-list-container{
+    columns: 2;
+}
+.fetch-list-container ul li{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+
+.btn{
+    background-color: white;
+    padding: 7px 10px;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #999;
+}
+
+.sub{
+    background-color: white;
+    padding: 6px 9px;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    margin-left: 2%;
+}
+.sub:hover{
+    cursor: pointer;
+    background-color: #999;
+}
+.error-msg {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.error-msg h1{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media all and (max-width: 650px) {
+    .container{
+        flex-direction: column;
+    }
+    .fetch-list-container{
+        columns: 1;
+    }
+    .fetch-list-container ul li{
+        font-size: 1.2rem;
+        padding-bottom: 4px;
+    }
+    .btn:last-child{
+      margin-bottom: 20px;
+    }
+    .fetch-title{
+        padding: 0px 15px;
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+    .error-msg h1{
+        font-size: 1.4rem;
+    }
+  }
+
+  @media all and (650px < width <= 880px) {
+    .container{
+        flex-direction: column;
+    }
+    .fetch-list-container{
+        columns: 1;
+    }
+    .fetch-list-container ul li{
+        font-size: 1.6rem;
+        padding-bottom: 8px;
+    }
+    .btn:last-child{
+      margin-bottom: 20px;
+    }
+    .fetch-title{
+        padding: 0px 15px;
+        font-size: 1.6rem;
+        line-height: 25px;
+    }
+    .error-msg h1{
+        font-size: 1.6rem;
+    }
+  }
